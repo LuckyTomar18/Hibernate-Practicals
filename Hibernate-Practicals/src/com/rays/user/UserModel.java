@@ -103,6 +103,7 @@ public class UserModel {
 
 		Session session = sf.openSession();
 
+		// select * from User table (of UserDTO)
 		Criteria criteria = session.createCriteria(UserDTO.class);
 
 		if (dto != null) {
